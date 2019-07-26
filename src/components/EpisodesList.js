@@ -11,7 +11,7 @@ export default function LocationsList() {
     axios
       .get(`https://rickandmortyapi.com/api/episode/`)
       .then(response => {
-      console.log(response.data.results)
+
         setEpisode(response.data.results)
 
       })

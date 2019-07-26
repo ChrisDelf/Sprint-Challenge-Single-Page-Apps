@@ -21,7 +21,7 @@ export default function EpisodeCard (props) {
     </div>
   </div>
   <div className="extra content">
-    <a herf = {episodeInfo.url}> Episode Link
+    <a href = {episodeInfo.url}> Episode Link
       <i className="user icon"></i>
 
     </a>

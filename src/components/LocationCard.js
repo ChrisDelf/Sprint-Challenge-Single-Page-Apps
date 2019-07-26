@@ -4,7 +4,7 @@ import { Header, Table, Rating } from 'semantic-ui-react';
 export default function LocationCard (props) {
    const locationInfo = props.character
   // image={image}
-  console.log(props)
+
   return (
 <div className="ui card">
 
