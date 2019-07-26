@@ -4,26 +4,26 @@ import { Header, Table, Rating } from 'semantic-ui-react';
 export default function CharacterCard (props) {
 const characterInfo = props.character
   return (
-<div class="ui card">
-  <div class="image">
+<div className="ui card">
+  <div className="image">
     <img src= {characterInfo.image}/>
   </div>
-  <div class="content">
-    <a class="header">{characterInfo.name}</a>
-    <div class="meta">
-    <span class="date">Date Created: {characterInfo.created}</span>
+  <div className="content">
+    <a className="header">{characterInfo.name}</a>
+    <div className="meta">
+    <span className="date">Date Created: {characterInfo.created}</span>
     </div>
-    <div class="description">
+    <div className="description">
     <p>Gender: {characterInfo.gender}</p>
     <p>Species: {characterInfo.species}</p>
     <p>Status: {characterInfo.status}</p>
 
     </div>
   </div>
-  <div class="extra content">
+  <div className="extra content">
     <a>
-      <i class="user icon"></i>
-      22 Friends
+      <i className="user icon"></i>
+
     </a>
   </div>
 </div>
