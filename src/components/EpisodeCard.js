@@ -1,29 +1,33 @@
 import React from 'react'
 import { Header, Table, Rating } from 'semantic-ui-react';
 
-export default function LocationCard (props) {
-   const locationInfo = props.character
-  // image={image}
+export default function EpisodeCard (props) {
+   const episodeInfo = props.character
+
 
   return (
+
 <div className="ui card">
 
   <div className="content">
-    <a className="header">{locationInfo.name}</a>
+    <a className="header">{episodeInfo.name}</a>
     <div className="meta">
-    <span className="date">Type: {locationInfo.type}</span>
+    <span className="date">Date Created: {episodeInfo.created}</span>
     </div>
     <div className="description">
-    <p>Dimension: {locationInfo.dimension}</p>
+    <p>Date aired: {episodeInfo.air_date}</p>
+    <p>Episode: {episodeInfo.episode}</p>
+
     </div>
   </div>
   <div className="extra content">
-    <a>
+    <a href = {episodeInfo.url}> Episode Link
       <i className="user icon"></i>
 
     </a>
   </div>
 </div>
+
 
 
 
